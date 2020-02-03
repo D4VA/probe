@@ -1,6 +1,6 @@
-button {
-border: 1px solid #2e518b; /*anchura, estilo y color borde*/
-padding: 10px; /*espacio alrededor texto*/
+input,button {
+border: 0px solid #2e518b; /*anchura, estilo y color borde*/
+padding: 1px; /*espacio alrededor texto*/
 background-color: #2e518b; /*color botón*/
 color: #ffffff; /*color texto*/
 text-decoration: none; /*decoración texto*/
