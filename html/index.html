@@ -11,7 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <!-- ESTILOS -->
-        <link rel="styleSheet" href="css/style.css">
+        <link rel="styleSheet" href="../css/style.css">
 
     </head>
     <body>
@@ -22,7 +22,7 @@
             <header>
                 <div class="header-inner"></div>
                 <a href="index.html" id="logo">
-                    <img src="img/pics/ICON.JPG" alt="Trade.com">
+                    <img src="../img/pics/ICON.JPG" alt="Trade.com">
                 </a>
 
                 <nav>
@@ -37,16 +37,22 @@
                             <a href="formulario.html" class="form">application form</a>
                         </li>
                         <li>
-                                <a href="#lenguages">Programming lenguages</a>
+                                <a href="#lenguages">Store</a>
                         </li>
                         <li>
                                 <a href="#IDE">IDE'S</a>
                         </li>
                         <li>
-                                <a href="#services">Servicios</a>
+                                <a href="#services">Services</a>
                         </li>
                         <li>
                                 <a href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a href="error404.html">Error 404</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,10 +60,10 @@
             </header>
             <section class="slide-warp">
                 <ul class="slider1">
-                <li class="slider"><img src="img/slider/Slider1.png" alt="Slider1"></li>
-                <li><img src="img/Slider/Slider2.jpeg" alt="Slider2"></li>
-                <li><img src="img/slider/Slider3.jpg" alt="Slider3"></li>
-                <li><img src="img/slider/Slider4.png" alt="Slider4"></li>
+                <li class="slider"><img src="../img/slider/Slider1.png" alt="Slider1"></li>
+                <li><img src="../img/Slider/Slider2.jpeg" alt="Slider2"></li>
+                <li><img src="../img/slider/Slider3.jpg" alt="Slider3"></li>
+                <li><img src="../img/slider/Slider4.png" alt="Slider4"></li>
                 </ul>
             </section>
         </div>
@@ -91,36 +97,42 @@
             
         <section class="one-third" id="API">
             <div class="icon-wrap">
-                <i class="fa fa-pencil-square-o"></i>
+                <i class="fa fa-file-code-o"></i>
             </div>
             <h3>API</h3>
-            <p>An API is an application programming interface (English API: application programming interface). 
-                It is a set of routines that provides access to functions of a specific software.
-                Son publicadas por los constructores de software para permitir acceso a características de bajo
-                nivel o propietarias, detallando solamente la forma en que cada rutina debe ser llevada a cabo y 
-                la funcionalidad que brinda, sin otorgar información acerca de cómo se lleva a cabo la tarea. Son 
-                utilizadas por los programadores para construir sus aplicaciones sin necesidad de volver a programar 
-                funciones ya hechas por otros, reutilizando código que se sabe que está probado y que funciona correctamente.</p>
+            <p>An API is an application programming interface (English API: application programming interface). It is a set of routines 
+                that provides access to functions of a specific software. They are published by software builders to allow access to low-level 
+                or proprietary features, detailing only how each routine should be carried out and the functionality it provides, without providing 
+                information about how the task is carried out. They are used by programmers to build their applications without re-programming functions 
+                already made by others, reusing code that is known to be tested and working properly.</p>
             </section>
 
             <div class="one-third-padding" id="services">
                 <h3>Data Base</h3>
-                <img src="img/pics/OurSkills.png" alt="DataBase">
+                <img src="../img/pics/OurSkills.png" alt="DataBase">
                 <p>Knowledge in creation, database administration, all this based on relational algebra and relational calculation, 
                    data insertion, queries, updates, and data deletion, modification and creation of schemes and control of data access.</p>
             </div>
 
             <div class="one-third-padding" id="poo">
                 <h3>Object-oriented programming</h3>
-                <img src="img/Slider/Slider2.jpeg" alt="DataBase">
+                <img src="../img/Slider/Slider2.jpeg" alt="DataBase">
                 <p>Object-oriented programming is a programming approach that combines data and associated actions (methods) into logical 
                    structures (objects). This approach increases the ability to manage software complexity, which is especially important 
                    when developing and requiring large applications and data structures.</p>
             </div>
 
+            <div class="one-third-padding" id="machine">
+            <h3>Python machine learning</h3>
+            <img src="../img/pics/pyhton.png">
+            <p>Machine learning is a type of artificial intelligence (AI) that provides computers with the ability to learn without being 
+                explicitly programmed. Machine learning focuses on the development of Computer Programs that can change when exposed to new data.
+                In this article, we’ll see basics of Machine Learning, and implementation of a simple machine learning algorithm using python.
+            </p>
+            </div>
 
-            <footer>
-                <div class="banner-wrapper">
+            <footer href>
+                <div class="banner-wrapper" >
                     <div class="icon-text">
                         <div class="icon-text-icon">
                             <ul class="footer-nav">
@@ -131,15 +143,15 @@
                                     <a href="#lenguages">lenguages</a>
                                 </li>
                                 <li>
-                                    <a href="#IDE'S">IDE'S</a>
+                                    <a href="#IDE">IDE'S</a>
                                 </li>
                                 <li>
-                                    <a href="#Services">Services</a>
+                                    <a href="#services">Services</a>
                                 </li>
                             </ul>
                         </div>
                         
-                        <div class="icon-text-text">
+                        <div class="icon-text-text" id="contact">
                             <ul class="social"> 
                                 <li>
                                     <a href="mailto: diegovelasquezavila@gmail.com" target="_blank">
@@ -170,7 +182,7 @@
             </footer>
         <!-- SCRIPTS -->
         <script>
-        $(document).ready(function(){
+        $(document).ready(()=>{
             $('.slider1').bxSlider({
                 mode: 'fade'
             })
